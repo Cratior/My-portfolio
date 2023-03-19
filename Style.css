@@ -508,3 +508,15 @@ footer {
     margin-bottom: 40px;
   }
   
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    transition: background-color 200ms ease-in;
+  }
+
