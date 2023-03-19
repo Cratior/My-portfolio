@@ -397,6 +397,12 @@ footer {
   textarea {
     height: 200px;
   }
+  a {
+    color: #b3cfe6;
+  }
+  a:hover {
+    color: rgba(0, 153, 255, 0.76);
+  }
   
   input[type="submit"] {
     background-color: #24292e;
