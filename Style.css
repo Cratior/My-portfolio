@@ -520,20 +520,62 @@ footer {
     transition: background-color 200ms ease-in;
   }
 
-.Card{
+  .Card-container {
     display: flex;
-}
-
-.Cards{
-    border-radius: 20px;
-    margin-left: 10px;
-    height: 200px;;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  .Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 14px;
+    overflow: hidden;
     background-color: #24292e;
-    flex: 1;
-    transition: .3s all ease;
-}
-
-.Cards:hover{
-    flex: 2;
-    background-color: #4c5157;
-}
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+  .Card:hover {
+    transform: scale(1.13);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Card-image {
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    border-radius: 14px 14px 0 0;
+  }
+  
+  .Card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 55%;
+    padding: 8px;
+  }
+  
+  .Card-title {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .Card-description {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+  }
+  
