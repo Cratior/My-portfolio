@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Skills Profolio</title>
+    <title>Callums Skills Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "Style.css">
+    <link rel = "website icon" type = "png" href = "./logo.png">
   </head>
 
   <body>
 	<header>
-      <div class="container">
-        <h1>My Coding Skills</h1>
-        <nav class="main-menu">
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact/Info</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+        <div class="container" style="display: flex; align-items: center;">
+            <a href="./logo.png"><img src="./logo.png" alt="Logo" style="width: 60px; float: left;"></a>
+            <h1 style="margin-left: 10px; margin-top: 0; margin-bottom: 0;">My Coding Skills</h1>
+            <nav class="main-menu">
+            <ul>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#Showing Off">Code</a></li>
+              <li><a href="#contact">Contact/Info</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
     <main>
       <!-- <section id="hero">
         <div class="container">
           <h2>Welcome to my website!</h2>
           <p>This is the main content of my website.</p>
-        </div> -->
-      </section>
+        </div>
+      </section> -->
       
       <section id="projects">
         <div class="container">
@@ -48,7 +52,7 @@
         <div class="container">
           <h2>Skills</h2>
           <ul>
-            <li>HTML5: not comfortable yet
+            <li>HTML5: not comfortable yet and needs guides
               <div class="progress-container">
                 <div class="progress-bar html-progress" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -61,20 +65,35 @@
           </ul>
         </div>
       </section>
-      
-      
-      <section id="contact">
+      <section id="skills">
         <div class="container">
-          <h2>Contact/Info</h2>
-          <ul>
-            <div class="email-box">
-                <p class="email-text">Email: <a href="mailto:callumduncan2007@icloud.com">callumduncan2007@icloud.com</a></p>
-              </div>
-              
-            <li><a href="./Callum Duncans cv.pdf" target="_blank">Download my CV</a></li>
-            <li>
-              <iframe src="./Callum Duncans cv.pdf" width="600px" height="775px"></iframe>
-            </li>
+          <div class="connected-box">
+            <div class="top-box">
+              <h2 class="text-4x1 tracking-wider neon rounded-box">
+                My code stuff
+              </h2>
+            </div>
+            <div class="bottom-box">
+              <h1 class="text-4x1 tracking-wider neon bottom-rounded" style="color: rgb(22, 22, 22);">
+                Test
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact" style="background-color: #24292e; color: #fff; padding: 40px 20px;">
+        <div style="max-width: 600px; margin: 0 auto;">
+          <h2 style="text-align: center; font-size: 32px; margin-bottom: 30px; color: #ffffff;">Contact Info</h2>
+          <div style="background-color: #fff; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
+            <p style="margin: 0; font-size: 18px; color: #24292e;">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <strong style="margin-left: 10px;">Email:</strong>
+              <span style="float: right;">callumduncan2007@icloud.com</span>
+            </p>
+          </div>
+          <ul style="list-style: none; padding-left: 0; margin-bottom: 0;">
+            <li><a href="./Callum Duncans cv.pdf" target="_blank" style="text-decoration: none; color: #095fffd5; background-color: #fff; display: inline-block; padding: 10px 20px; border-radius: 10px;">Download my CV</a></li>
           </ul>
         </div>
       </section>
