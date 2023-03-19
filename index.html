@@ -14,55 +14,62 @@
   <body>
 	<header>
         <div class="container" style="display: flex; align-items: center; position: relative;">
-            <button class="menu-toggle" aria-label="Open menu" style="position: absolute; top: 10px; right: 10px; font-size: 24px; line-height: 1; padding: 5px 10px; background-color: transparent; border: none; cursor: pointer;" onclick="toggleMenu()" ontouchstart="toggleMenu()">☰</button>
+            <button class="menu-toggle" aria-label="Open menu" style="position: absolute; top: 10px; right: 10px; font-size: 24px; line-height: 1; padding: 5px 10px; background-color: transparent; border: none; cursor: pointer;" onclick="toggleMenu()">☰</button>
             <nav class="menu-links" id="menu" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #24292e; display: none; z-index: 50;">
-                <button class="menu-toggle" aria-label="Close menu" style="position: absolute; top: 10px; right: 10px; font-size: 24px; line-height: 1; padding: 5px 10px; background-color: transparent; border: none; cursor: pointer;" onclick="toggleMenu()" ontouchstart="toggleMenu()">✕</button>
-                <ul class="menu-list" style="list-style: none; margin: 0; padding: 0; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
-                    <li><a href="#projects" onclick="toggleMenu(); return false;" ontouchstart="toggleMenu(); return false; scrollToElement('#projects'); toggleMenu(); return false;">Projects</a></li>
-                    <li><a href="#skills" onclick="toggleMenu(); return false;" ontouchstart="toggleMenu(); scrollToElement('#skills'); return false;">Skills</a></li>
-                    <li><a href="#showing-off" onclick="toggleMenu(); return false;" ontouchstart="toggleMenu(); scrollToElement('#showing-off'); return false;">Code</a></li>
-                    <li><a href="#contact" onclick="toggleMenu(); return false;" ontouchstart="toggleMenu(); scrollToElement('#contact'); return false;">Contact</a></li>
-                </ul>
+              <button class="menu-toggle" aria-label="Close menu" style="position: absolute; top: 10px; right: 10px; font-size: 24px; line-height: 1; padding: 5px 10px; background-color: transparent; border: none; cursor: pointer;" onclick="toggleMenu()">✕</button>
+              <ul class="menu-list" style="list-style: none; margin: 0; padding: 0; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                <li><a href="#projects" onclick="toggleMenu(); return false;">Projects</a></li>
+                <li><a href="#skills" onclick="toggleMenu(); scrollToElement('#skills');  return false;">Skills</a></li>
+                <li><a href="#showing-off" onclick="toggleMenu(); scrollToElement('#showing-off');  return false;">Code</a></li>
+                <li><a href="#contact" onclick="toggleMenu(); scrollToElement('#contact');  return false;">Contact</a></li>
+              </ul>
             </nav>
-        </div>
-        
-        <script>
-        function toggleMenu() {
+          </div>
+          
+          <script>
+          function toggleMenu() {
             var menu = document.getElementById("menu");
             if (menu.style.display === "block") {
-                menu.style.display = "none";
+              menu.style.display = "none";
             } else {
-                menu.style.display = "block";
+              menu.style.display = "block";
             }
-            console.log("toggleMenu() called");
-        }
-        </script>
-        
-        <style>
-        /* Style the menu toggle button */
-        .menu-toggle {
+          }
+          
+          function scrollToElement(id) {
+            var element = document.querySelector(id);
+            element.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+          </script>
+          
+          <style>
+          /* Style the menu toggle button */
+          .menu-toggle {
             display: block;
             font-size: 24px;
             background: none;
             border: none;
             color: #333;
             cursor: pointer;
-        }
-        
-        /* Style the menu links */
-        .menu-list li {
+          }
+          
+          /* Style the menu links */
+          .menu-list li {
             margin: 10px 0;
-        }
-        
-        /* Style the link labels */
-        .menu-list a {
+          }
+          
+          /* Style the link labels */
+          .menu-list a {
             display: block;
             padding: 10px;
             font-size: 18px;
             color: #fff;
             text-decoration: none;
-        }
-        </style>
+          }
+          </style>
+          
         </div>
       </header>
       
