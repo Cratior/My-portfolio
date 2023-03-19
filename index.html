@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <title>Callums Skills Portfolio</title>
+    <script src="js/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "Style.css">
     <link rel = "website icon" type = "png" href = "./logo.png">
+    
   </head>
 
   <body>
 	<header>
         <div class="container" style="display: flex; align-items: center;">
-            <a href="./logo.png"><img src="./logo.png" alt="Logo" style="width: 60px; float: left;"></a>
-            <h1 style="margin-left: 10px; margin-top: 0; margin-bottom: 0;">My Coding Skills</h1>
-            <nav class="main-menu">
+          <a href="#top"><img src="./logo.png" alt="Logo" style="width: 60px;"></a>
+          <nav class="menu">
             <ul>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#Showing Off">Code</a></li>
-              <li><a href="#contact">Contact/Info</a></li>
+              <li><a href="#projects" onclick="scrollToElement('#projects')">Projects</a></li>
+              <li><a href="#skills" onclick="scrollToElement('#skills')">Skills</a></li>
+              <li><a href="#showing-off" onclick="scrollToElement('#showing-off')">Code</a></li>
+              <li><a href="#contact" onclick="scrollToElement('#contact')">Contact/Info</a></li>
             </ul>
           </nav>
         </div>
@@ -83,7 +85,7 @@
       </section>
       
       <section id="contact" style="background-color: #24292e; color: #fff; padding: 40px 20px; border-radius: 25px;">
-        <div style="max-width: 600px; margin: 0 auto;">
+        <div style="max-width: 600px; margin: 0 auto; ">
           <h2 style="text-align: center; font-size: 32px; margin-bottom: 30px; color: #ffffff;">Contact Info</h2>
           <div style="background-color: #fff; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
             <p style="margin: 0; font-size: 18px; color: #24292e;">
