@@ -13,16 +13,88 @@
 
   <body>
 	<header>
-        <div class="container" style="display: flex; align-items: center;">
-          <a href="#top"><img src="./logo.png" alt="Logo" style="width: 60px;"></a>
-          <nav class="menu">
-            <ul>
-              <li><a href="#projects" onclick="scrollToElement('#projects')">Projects</a></li>
-              <li><a href="#skills" onclick="scrollToElement('#skills')">Skills</a></li>
-              <li><a href="#showing-off" onclick="scrollToElement('#showing-off')">Code</a></li>
-              <li><a href="#contact" onclick="scrollToElement('#contact')">Contact/Info</a></li>
-            </ul>
-          </nav>
+        <div class="container" style="display: flex; align-items: center; position: relative;">
+            <button class="menu-toggle" aria-label="Open menu" style="position: absolute; top: 10px; right: 10px; font-size: 24px; line-height: 1; padding: 5px 10px; background-color: transparent; border: none; cursor: pointer;" onclick="toggleMenu()">☰</button>
+            <nav class="menu-links" id="menu" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #24292e; display: none; z-index: 50;">
+              <button class="menu-toggle" aria-label="Close menu" style="position: absolute; top: 10px; right: 10px; font-size: 24px; line-height: 1; padding: 5px 10px; background-color: transparent; border: none; cursor: pointer;" onclick="toggleMenu()">✕</button>
+              <ul class="menu-list" style="list-style: none; margin: 0; padding: 0; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                <li><a href="#projects" onclick="toggleMenu(); return false; scrollToElement('#projects'); toggleMenu(); return false;">Projects</a></li>
+<li><a href="#skills" onclick="toggleMenu(); scrollToElement('#skills');  return false;">Skills</a></li>
+<li><a href="#showing-off" onclick="toggleMenu(); scrollToElement('#showing-off');  return false;">Code</a></li>
+<li><a href="#contact" onclick="toggleMenu(); scrollToElement('#contact');  return false;">Contact</a></li>
+
+
+              </ul>
+            </nav>
+          </div>
+          
+          <script>
+          function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+  console.log("toggleMenu() called");
+}
+
+          </script>
+          
+          <style>
+          
+          /* Style the menu toggle button */
+          .menu-toggle {
+            display: block;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: #333;
+            cursor: pointer;
+          }
+          
+          /* Style the menu links */
+          .menu-list li {
+            margin: 10px 0;
+          }
+          
+          /* Style the link labels */
+          .menu-list a {
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+          }
+          
+          /* Style the link labels on hover */
+          .menu-list a:hover {
+            background-color: #3b3b3b;
+          }
+          
+          @media (max-width: 768px) {
+            .menu-links {
+              transform: translateX(-100%);
+              transition: transform 0.3s ease-in-out;
+            }
+            .menu-links.show {
+              transform: translateX(0);
+            }
+            .menu-links li {
+              margin-bottom: 20px;
+            }
+            .menu-links li:last-child {
+              margin-bottom: 0;
+            }
+            .menu-links a {
+              font-size: 24px;
+              color: #5a5a5a;
+              text-decoration: none;
+            }
+          }
+          </style>
+          
+          
         </div>
       </header>
       
@@ -79,6 +151,7 @@
               <h1 class="text-4x1 tracking-wider neon bottom-rounded" style="color: rgb(22, 22, 22);">
                 Test
               </h1>
+              
             </div>
           </div>
         </div>
