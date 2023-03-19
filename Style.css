@@ -520,3 +520,20 @@ footer {
     transition: background-color 200ms ease-in;
   }
 
+.Card{
+    display: flex;
+}
+
+.Cards{
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 200px;;
+    background-color: #24292e;
+    flex: 1;
+    transition: .3s all ease;
+}
+
+.Cards:hover{
+    flex: 2;
+    background-color: #4c5157;
+}
