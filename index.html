@@ -133,15 +133,19 @@
       </section>
       
       <section id="contact" style="background-color: #24292e; color: #fff; padding: 40px 20px; border-radius: 25px;">
-        <div style="max-width: 600px; margin: 0 auto; ">
-          <h2 style="text-align: center; font-size: 32px; margin-bottom: 30px; color: #ffffff;">Contact Info</h2>
-          <div style="background-color: #fff; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
-            <p style="margin: 0; font-size: 23px; color: #24292e;">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i>
-              <strong style="margin-left: 10px;">Email:</strong>
-              <span style="float: right;">callumduncan2007@icloud.com</span>
-            </p>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 32px; margin-bottom: 30px; color: #ffffff;">Contact Info</h2>
+            <div style="background-color: #fff; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
+              <div style="display: flex; align-items: center; justify-content: space-between;">
+                <p style="margin: 0; font-size: 23px; color: #24292e;">
+                  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                  <strong style="font-size: calc(10px + 1.2vw);">Email:</strong>
+                  <span style="font-size: calc(8px + 1.2vw); line-height: 1.5em;">callumduncan2007@icloud.com</span>
+                </p>
+              </div>
+            </div>
           </div>
+          
           <p style="margin: 0; font-size: 18px; color: #fff;">
             <i class="fa fa-github" aria-hidden="true"></i>
             <strong style="margin-left: 10px;">GitHub:</strong>
@@ -152,6 +156,32 @@
           </ul>
         </div>
       </section>
+      
+      <style>
+        /* Responsive styling for Contact Info section */
+        @media (max-width: 767px) {
+          #contact {
+            padding: 20px;
+            border-radius: 10px;
+          }
+          h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+          }
+          p {
+            font-size: 16px;
+          }
+          ul li a {
+            padding: 8px 16px;
+            font-size: 14px;
+          }
+          span {
+            max-width: 100%;
+          }
+        }
+      </style>
+      
+      
       
       
   </body>
