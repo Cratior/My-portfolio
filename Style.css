@@ -75,19 +75,19 @@ body {
   nav ul {
     list-style: none;
     margin: 0;
-    padding: 27px;
+    padding: 31px;
   }
   
   nav li {
     display: inline-block;
-    margin-left: 33px;
+    margin-left: 6px;
   }
   
   nav a {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16.2px;
+    font-size: 14.5px;
     font-weight: bold;
     transition: color 0.3s;
   }
@@ -100,7 +100,7 @@ body {
   
   main {
     max-width: 800px;
-    margin: auto;
+    margin-left: 10px;
     padding: 40px 20px;
     margin-top: 20px; /* adjust this value to match the height of your header */
   }
@@ -300,7 +300,45 @@ body {
     }
     }
     /* Footer Styles */
-
+    .neon {
+        color: #f0f0f0;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 90 #0ff;
+      }
+      
+      .rounded-box {
+        background-color: #24292e;
+        border-radius: 10px 10px 0 0;
+        box-shadow: 0 0 10px #000;
+        padding: 20px;
+      }
+      
+      .bottom-rounded {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 0 10px #000;
+        padding: 20px;
+      }
+      
+      .connected-box {
+        position: relative;
+        z-index: 1;
+      }
+      
+      .top-box {
+        position: relative;
+        z-index: 2;
+        margin-bottom: -30px;
+      }
+      
+      .bottom-box {
+        position: relative;
+        z-index: 2;
+        margin-top: -10px;
+        background-color: #fff;
+      }
+      
+      
+      
 footer {
     position: static;
   }
@@ -386,6 +424,64 @@ footer {
       margin-top: 60px;
     }
 
-    
+    .contact-info {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+      }
+      
+      .envelope-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
+      
+      .envelope {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 120px;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      
+      .envelope:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      
+      .top-flap {
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 75px 20px 0;
+        border-color: transparent #f5f5f5 transparent transparent;
+      }
+      
+      .letter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 0 0 5px 5px;
+      }
+      
+      .letter p {
+        margin: 0;
+        font-weight: bold;
+        text-align: center;
+      }
+      
   }
     
