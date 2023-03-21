@@ -765,61 +765,62 @@ a.download-link {
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
 
 .glitch {
-display: flex;
-width: 110%;
-height: 140px;
-align-items: center;
-justify-content: center;
-margin: 0;
-color: #535353;
-font-size: 28px;
-font-family: 'Fira Mono', monospace;
-letter-spacing: -2.6px;
-position: relative;
+  display: flex;
+  width: 100%;
+  height: 13vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: #535353;
+  font-size: 2.2vh;
+  font-family: 'Fira Mono', monospace;
+  letter-spacing: -1.5px;
+  position: relative;
+  line-height: 1;
 }
 
 .glitch::before,
 .glitch::after {
-content: attr(title);
-position: absolute;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
+  content: attr(title);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .glitch::before {
-animation: glitchTop 1s linear infinite;
-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
--webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
 
 .glitch::after {
-animation: glitchBotom 1.5s linear infinite;
-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
--webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
 }
 
 @keyframes glitchTop {
-2%, 64% {
-transform: translate(2px,-2px);
-}
-4%, 60% {
-transform: translate(-2px,2px);
-}
-62% {
-transform: translate(13px,-1px) skew(-13deg);
-}
+  2%, 64% {
+    transform: translate(2px,-2px);
+  }
+  4%, 60% {
+    transform: translate(-2px,2px);
+  }
+  62% {
+    transform: translate(13px,-1px) skew(-13deg);
+  }
 }
 
 @keyframes glitchBotom {
-2%, 64% {
-transform: translate(-2px,0);
-}
-4%, 60% {
-transform: translate(-2px,0);
-}
-62% {
-transform: translate(-22px,5px) skew(21deg);
-}
+  2%, 64% {
+    transform: translate(-2px,0);
+  }
+  4%, 60% {
+    transform: translate(-2px,0);
+  }
+  62% {
+    transform: translate(-22px,5px) skew(21deg);
+  }
 }
