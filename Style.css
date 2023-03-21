@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
   }
   progress {
     width: 100%;
@@ -520,3 +520,306 @@ footer {
     transition: background-color 200ms ease-in;
   }
 
+/* Style the menu toggle button */
+.menu-toggle {
+  display: block;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Style the menu links */
+.menu-list li {
+  margin: 10px 0;
+}
+
+/* Style the link labels */
+.menu-list a {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  color: #747474;
+  text-decoration: none;
+}
+
+.custom-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.custom-menu-toggle {
+  font-size: 24px;
+  line-height: 1;
+  padding: 5px 10px;
+  background-color: #747474;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-menu-toggle[aria-label="Open menu"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.custom-menu-toggle[aria-label="Close menu"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.custom-menu-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #24292e;
+  display: none;
+  z-index: 50;
+}
+
+.custom-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.contact-section {
+  background-color: #24292e;
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 25px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.contact-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-label {
+  margin: 0;
+  font-size: 23px;
+  color: #24292e;
+}
+
+.contact-link {
+  color: #0077cc;
+  font-size: calc(8px + 1.2vw);
+  line-height: 1.5em;
+}
+
+/* Styles for Contact Info section */
+.contact-section {
+  background-color: #24292e;
+  color: #fff;
+  padding: 40px 20px;
+  border-radius: 25px;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.contact-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.contact-item {
+  margin: 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.contact-label {
+  margin-left: 10px;
+}
+
+.contact-link {
+  color: #0084ffcb;
+  margin-left: 5px;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.contact-download-link {
+  text-decoration: none;
+  color: #095fffd5;
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+/* Responsive styling for Contact Info section */
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .contact-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item {
+    font-size: 16px;
+  }
+  
+  .contact-download-link {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  span {
+    max-width: 100%;
+  }
+}
+
+.popout-box {
+  position: relative;
+  display: inline-block;
+}
+.popout-box:hover .popout {
+  display: block;
+}
+.popout {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  text-align: center;
+  font-size: 12px;
+  color: #333;
+}
+.popout:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #ccc transparent;
+}
+
+a.download-link {
+  text-decoration: none;
+  color: #095fffd5;
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+.glitch {
+display: flex;
+width: 110%;
+height: 140px;
+align-items: center;
+justify-content: center;
+margin: 0;
+color: #535353;
+font-size: 28px;
+font-family: 'Fira Mono', monospace;
+letter-spacing: -2.6px;
+position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+content: attr(title);
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+}
+
+.glitch::before {
+animation: glitchTop 1s linear infinite;
+clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+.glitch::after {
+animation: glitchBotom 1.5s linear infinite;
+clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+-webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchTop {
+2%, 64% {
+transform: translate(2px,-2px);
+}
+4%, 60% {
+transform: translate(-2px,2px);
+}
+62% {
+transform: translate(13px,-1px) skew(-13deg);
+}
+}
+
+@keyframes glitchBotom {
+2%, 64% {
+transform: translate(-2px,0);
+}
+4%, 60% {
+transform: translate(-2px,0);
+}
+62% {
+transform: translate(-22px,5px) skew(21deg);
+}
+}

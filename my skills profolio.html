@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Callums Skills Portfolio</title>
+      <script src="./script.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel = "stylesheet" href = "Style.css">
+      <link rel = "website icon" type = "png" href = "./logo.png">
+   </head>
+   <body>
+    
+      <header>
+         <div class="custom-container">
+            <button class="custom-menu-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+            <nav class="custom-menu-links" id="menu">
+               <button class="custom-menu-toggle" aria-label="Close menu" onclick="toggleMenu()">✕</button>
+               <ul class="custom-menu-list">
+                  <li><a href="#projects" onclick="toggleMenu(); scrollToElement('#projects'); return false;">Projects</a></li>
+                  <li><a href="#skills" onclick="toggleMenu(); scrollToElement('#skills'); return false;">Skills</a></li>
+                  <li><a href="#code" onclick="toggleMenu(); scrollToElement('#code'); return false;">Code</a></li>
+                  <li><a href="#contact" onclick="toggleMenu(); scrollToElement('#contact'); return false;">Contact</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main>
+      <section id="projects">
+         <div class="container">
+            <h2>Projects</h2>
+            <ul>
+            <li>
+               <div class="project-box">
+                  <div class="project-image">
+                     <img src="./html5-logo.png" alt="Project 2">
+                  </div>
+                  <div class="project-details">
+                     <h1>This website</h1>
+                     <p>I have put a lot of effort into this website and I'm going to be putting lots of new features and projects on here.</p>
+                     <a href="https://cratior.github.io/My-portfolio/">Link to the website your allready on</a>
+                  </div>
+               </div>
+            </li>
+            <li>
+               <div class="project-box">
+                  <div class="project-image">
+                     <img src="./Brickshooter.png" alt="Project 2">
+                  </div>
+                  <div class="project-details">
+                     <h1>Brick Shooter</h1>
+                     <p>Brick Shooter is a small and simple game made in Unity. It has a retro style and a very simple concept. You drag to shoot, but be careful, there is a cool down. The objective is to destroy all bricks before the time runs out. The bricks and time limit are random, allowing for relaxed gameplay which can become tense as you slowly run out of lives. I made this in 2 days, but don't worry, I put a lot of effort into this game making sounds and sprites. This is my first game (that I'm publishing).</p>
+                     <a href="https://cratior.itch.io/brick-shooter">Check out "Brick Shooter" on itch.io</a>
+                  </div>
+               </div>
+            </li>
+            <ul>
+               <li>
+                  <div class="project-box">
+                     <div class="project-image">
+                        <img src="./placeholder.jpg" alt="Project 2">
+                     </div>
+                     <div class="project-details">
+                        <h1>Project: 3</h1>
+                        <p>Description</p>
+                        <a href="https://cratior.github.io/My-portfolio/">Link to Source/Project</a>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="skills">
+         <div class="container">
+            <h2>Skills</h2>
+            <ul>
+               <li>
+                  HTML5: not comfortable yet and needs guides
+                  <div class="progress-container">
+                     <div class="progress-bar html-progress" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </li>
+               <li>
+                  C#: comfortable with small scale to medium projects
+                  <div class="progress-container">
+                     <div class="progress-bar csharp-progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section id="code">
+         <div class="container">
+            <div class="connected-box">
+               <div class="top-box">
+                  <h2 class="text-4x1 tracking-wider neon rounded-box">
+                     My code stuff
+                  </h2>
+               </div>
+               <div class="bottom-box">
+                  <h1 class="text-4x1 tracking-wider neon bottom-rounded" style="color: rgb(22, 22, 22);">
+                    <div class="glitch" title="This section displays the code examples I have learned."></div>
+                    
+                  </h1>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <h2 class="contact-heading">Contact Info</h2>
+          <div class="contact-box">
+            <div class="contact-item">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <strong class="contact-label">Email:</strong>
+              <a href="mailto:callumduncan2007@icloud.com" class="contact-link">callumduncan2007@icloud.com</a>
+            </div>
+          </div>
+        </div>
+        <p>
+          <i class="fa fa-github" aria-hidden="true"></i>
+          <strong style="margin-left: 10px;">GitHub:</strong>
+          <a href="https://github.com/Cratior" target="_blank" style="color: #00aeffcb; margin-left: 5px;">Cratior</a>
+        </p>
+        <div class="popout-box">
+          <a href="./Callum Duncans cv.zip" target="_blank" class="download-link">Download my CV</a>
+          <div class="popout">Email for password</div>
+        </div>
+        
+   </body>
+</html>
